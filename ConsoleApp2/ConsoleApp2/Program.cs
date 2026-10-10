@@ -27,6 +27,20 @@ namespace VehicleTask
 
             Console.WriteLine("Информация об автомобиле:");
             Console.WriteLine(car.GetFullInfo());
+
+            car.NumberSign = "E777KX";
+            car.RegNumb = 69;
+            car.RegName = "Тверь";
+
+            Console.WriteLine("Информация об автомобиле:");
+            Console.WriteLine(car.GetFullInfo()); 
+
+            car.NumberSign = "О001ОО";
+            car.RegNumb = 178;
+            car.RegName = "Санкт-Петербург";
+
+            Console.WriteLine("Информация об автомобиле:");
+            Console.WriteLine(car.GetFullInfo());
         }
     }
 }
